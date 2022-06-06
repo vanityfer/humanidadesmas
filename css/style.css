@@ -446,7 +446,7 @@ h2 {
 
 /* Burger */
 .burger {
-  width: 75px;
+  width: 100px;
   height: 75px;
   cursor: pointer;
   position: relative;
