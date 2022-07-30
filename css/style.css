@@ -64,6 +64,7 @@ h2 {
 
 .filters a.active {
   color: #555;
+  font-size: 0.8em;
 }
 
 .filters a.active:before {
