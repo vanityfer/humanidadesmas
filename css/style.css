@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.7em;
 }
 
 .section {
@@ -40,7 +40,6 @@ h2 {
 }
 
 .filters a {
-  font-size: 0.8em;
   text-decoration: none;
   color:#000000;
   display: inline-block;
@@ -65,8 +64,7 @@ h2 {
 
 .filters a.active {
   color: #555;
-  font-size: 0.8em;
-}
+  }
 
 .filters a.active:before {
   content: "";
