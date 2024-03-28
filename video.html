@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Poetry, electronic literature, coding, essays and other things by Fernanda Mugica">
+    <meta name="keywords" content="poetry, art, code, philosophy">
+    <title>Fernanda Mugica | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- ÍCONOS TWITTER ETC -->
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- EFECTO DE COSAS QUE VAN LLEGANDO-->
+    <link href="vendor/aos/aos.css" rel="stylesheet"> 
+    <!--<link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+<body>
+
+
+<main id="main">
+
+  <script type="text/javascript">
+    function main() {
+      let ids = {
+        'gainza': '-FuA0guJKIE',
+        'presenta': 'RsGU8G9Y4Xc',
+        'gatto': 'v1Am21sYIg4',
+       
+      };
+      let titulos = {
+        'gainza': 'Entrevista a Carolina Gainza',
+        'presenta': 'Presentación de la Colección H++',
+        'gatto': 'Conversatorio con Ezequiel Gatto',
+       
+      };
+
+      let descripciones = {
+        'gainza': 'Entrevista a Carolina Gainza, subsecretaria de Ciencias de Chile, realizada el 15 de julio de 2022 por el Colectivo Humanidades++',
+        'presenta': 'Presentación de la Colección Humanidades Aumentadas y de la revista Ctrl+Alt en el Centro de Estudios Interdisciplinarios de la Universidad Nacional de Rosario, el 12 de agosto de 2022. Con la participación de Franco Bartolacci (Rector UNR), Darío Maiorana (Director del CEI), Jimena Néspolo (UBA-CONICET), Fernanda Mugica (UNMdP-CONICET), Juan José Mendoza (UBA-UNA-CONICET) y los autores: Verónica Paula Gómez y Germán Ledesma.',
+        'gatto': 'Maestría en Humanidades Aumentadas - Colectivo H++ presenta el primer conversatorio del año 2024. Ezequiel Gatto (UNR). Investigador CONICET, docente de Sociología de la Cultura y el Arte (carrera de Gestión Cultural, Universidad Nacional de Rosario), traductor y coordinador de talleres. Integra la editorial Tinta Limón. Doctor en Ciencias Sociales por la Universidad de Buenos Aires y Licenciado en Historia (UNR). Colabora y articula con diversos proyectos políticos y culturales. Ha publicado artículos en revistas y, recientemente, el libro "Futuridades. Ensayo sobre política posutópica"
+',
+       
+      };
+
+      
+      let partes = window.location.href.split('?');
+      let cod = partes[1].substring(2, partes[1].length);
+    
+      let pantalla = document.getElementById('pantalla');
+      pantalla.src = 'https://www.youtube.com/embed/' + ids[cod];
+    
+      let titulo = document.getElementById('titulo');
+      let descripcion = document.getElementById('descripcion');
+      while (titulo.firstChild) {
+        titulo.removeChild(titulo.firstChild);
+      }
+      titulo.appendChild(document.createTextNode(titulos[cod]));
+
+     
+      while (descripcion.firstChild) {
+        descripcion.removeChild(descripcion.firstChild);
+      }
+      descripcion.appendChild(document.createTextNode(descripciones[cod]));
+      
+    }
+      
+    </script>
+    
+    <body onload="main()">
+    
+      <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+        <div class="container py-2 py-md-5">
+          <div class="row align-items-start">
+            <div class="col-md-2">
+              <ul class="custom-menu">
+               
+                <li><a href="about.html">Bio</a></li>
+                <li><a href="formu_db.php">Contacto</a></li>
+              </ul>
+            </div>
+            
+    
+            <div class="col-md-6 d-none d-md-block  mr-auto">
+              
+            </div>
+            <div class="col-md-4 d-none d-md-block">   
+              <div class="col-sm-12 social text-md-end">
+              <a href="http://twitter.com/vanityfer"><span class="bi bi-twitter"></span></a>
+              <a href="https://www.facebook.com/fernanda.mugica/"><span class="bi bi-facebook"></span></a>
+              <a href="https://www.instagram.com/vanity.fer/?hl=fr"><span class="bi bi-instagram"></span></a>
+                      
+            </div>
+            </div>
+    
+    
+          </div>
+    
+        </div>
+      </div>
+    
+    
+      <nav class="navbar navbar-light custom-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </nav>
+    
+      <main id="main">
+    
+        <section class="section pb-5">
+          <div class="container">
+            <div class="row mb-5 align-items-end">
+              <div class="col-md-6" data-aos="fade-up">
+    
+                <h2><p id="titulo"></p></h2>
+                
+              </div>
+    
+            </div>
+    
+            <div class="row">
+              
+              <div class="col-md-4 ml-auto order-4" data-aos="fade-up">
+                <br>
+                <p><p id="descripcion"></p></p>
+                
+                    
+                  </li>
+                                 
+                  </li>
+                </ul>
+              </div>
+    
+              <div class="col-md-7 mb-5 mb-md-0" data-aos="fade-up">
+                <p><iframe id="pantalla" width="600" height="450" src="">
+                </iframe> 
+                <p id="titulo"></p>
+                </p>
+                
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </section>
+    
+      </main><!-- End #main -->
+    
+    
+    
+    
+    </body>
+    
+  
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Licencia de Creative Commons" style="border-width:0" 
+            src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+             </a></p>
+          <div class="credits">
+           
+            Diseñado por <a href="https://vanityfer.xyz/">Fernanda Mugica</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="http://twitter.com/vanityfer""><span class="bi bi-twitter"></span></a>
+          <a href="https://www.facebook.com/fernanda.mugica/"><span class="bi bi-facebook"></span></a>
+          <a href="https://www.instagram.com/vanity.fer/?hl=fr"><span class="bi bi-instagram"></span></a>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/hola.js"></script>
+
+</body>
+
+</html>
